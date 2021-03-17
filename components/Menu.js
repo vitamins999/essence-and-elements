@@ -1,15 +1,18 @@
+import { motion } from 'framer-motion';
+
 const Menu = ({ menuOpen }) => {
   return (
-    <nav
-      className={`bg-white font-body absolute top-0 ${
-        menuOpen ? 'right-0' : 'hidden'
-      } w-60 h-full flex items-center justify-center z-40 text-gray-900`}
+    <motion.nav
+      initial={false}
+      animate={menuOpen ? { x: 0 } : { x: 500 }}
+      transition={{ type: 'tween' }}
+      className={`bg-white font-body fixed right-0 top-0 w-60 h-full flex items-center justify-center z-40 text-gray-900`}
     >
       <ul className='text-2xl'>
         <li>
           <a
             className='hover:text-purple-700 transition ease-in-out duration-150'
-            href='#'
+            href='/'
           >
             Home
           </a>
@@ -47,7 +50,7 @@ const Menu = ({ menuOpen }) => {
           </a>
         </li>
       </ul>
-    </nav>
+    </motion.nav>
   );
 };
 
