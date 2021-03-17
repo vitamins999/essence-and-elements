@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 const Menu = ({ menuOpen }) => {
@@ -10,12 +11,11 @@ const Menu = ({ menuOpen }) => {
     >
       <ul className='text-2xl'>
         <li>
-          <a
-            className='hover:text-purple-700 transition ease-in-out duration-150'
-            href='/'
-          >
-            Home
-          </a>
+          <Link href='/'>
+            <a className='hover:text-purple-700 transition ease-in-out duration-150'>
+              Home
+            </a>
+          </Link>
         </li>
         <li>
           <a
