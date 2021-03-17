@@ -5,7 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Menu from './Menu';
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, footerFixed }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -14,10 +14,10 @@ const Layout = ({ children, title }) => {
         <link rel='icon' href='favicon.ico' />
         <title>Essence & Elements | {title}</title>
       </Head>
-      <div className='bg-gray-200 text-gray-900 font-body'>
+      <div className='bg-gray-50 text-gray-900 font-body'>
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <div>{children}</div>
-        <Footer />
+        {footerFixed ? <Footer footerFixed={true} /> : <Footer />}
       </div>
       <Menu menuOpen={menuOpen} />
     </>

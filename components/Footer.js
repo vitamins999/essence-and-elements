@@ -1,10 +1,14 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const Footer = () => {
+const Footer = ({ footerFixed }) => {
   return (
-    <footer className='absolute bottom-20 z-10 px-28'>
-      <ul className='flex justify-center items-center'>
+    <footer className={`${footerFixed && 'absolute bottom-20'} z-10 px-28`}>
+      <ul
+        className={`${
+          footerFixed ? 'justify-center' : 'pb-10'
+        } flex items-center`}
+      >
         <motion.li
           whileHover={{ translateY: -7 }}
           className='cursor-pointer mr-5'

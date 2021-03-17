@@ -18,36 +18,32 @@ const Menu = ({ menuOpen }) => {
           </Link>
         </li>
         <li>
-          <a
-            className='hover:text-purple-700 transition ease-in-out duration-150'
-            href='#'
-          >
-            Services
-          </a>
+          <Link href='/services'>
+            <a className='hover:text-purple-700 transition ease-in-out duration-150'>
+              Services
+            </a>
+          </Link>
         </li>
         <li>
-          <a
-            className='hover:text-purple-700 transition ease-in-out duration-150'
-            href='#'
-          >
-            Products
-          </a>
+          <Link href='/products'>
+            <a className='hover:text-purple-700 transition ease-in-out duration-150'>
+              Products
+            </a>
+          </Link>
         </li>
         <li>
-          <a
-            className='hover:text-purple-700 transition ease-in-out duration-150'
-            href='#'
-          >
-            About Us
-          </a>
+          <Link href='/about'>
+            <a className='hover:text-purple-700 transition ease-in-out duration-150'>
+              About Us
+            </a>
+          </Link>
         </li>
         <li>
-          <a
-            className='hover:text-purple-700 transition ease-in-out duration-150'
-            href='#'
-          >
-            Contact Us
-          </a>
+          <Link href='/contact'>
+            <a className='hover:text-purple-700 transition ease-in-out duration-150'>
+              Contact Us
+            </a>
+          </Link>
         </li>
       </ul>
     </motion.nav>
