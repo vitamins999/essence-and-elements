@@ -6,7 +6,9 @@ const ServicesPage = () => {
   return (
     <Layout title='Services'>
       <section className='relative px-28 pt-32 pb-10 z-10 min-h-screen w-full'>
-        <h2 className='text-4xl tracking-wide font-heading'>Our Services</h2>
+        <h2 className='text-4xl tracking-wide font-heading uppercase'>
+          Our Services
+        </h2>
         <p className='my-10 max-w-4xl'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
           error quo molestias quia iste, tenetur ut beatae totam nesciunt

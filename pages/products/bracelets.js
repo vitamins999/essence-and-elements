@@ -1,13 +1,13 @@
-import Layout from '../components/Layout';
-import Card from '../components/Card';
-import { products } from '../data/products';
+import Layout from '../../components/Layout';
+import Item from '../../components/Item';
+import { bracelets } from '../../data/products';
 
-const ProductsPage = () => {
+const BraceletsPage = () => {
   return (
-    <Layout title='Products'>
-      <section className='relative px-28 py-32 z-10 min-h-screen w-full'>
+    <Layout title='Bracelets'>
+      <section className='relative px-28 pt-32 pb-20 z-10 min-h-screen w-full'>
         <h2 className='text-4xl tracking-wide font-heading uppercase'>
-          Products
+          Bracelets
         </h2>
         <p className='my-10 max-w-4xl'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sit
@@ -16,12 +16,14 @@ const ProductsPage = () => {
           facere animi! Ullam iusto molestiae provident inventore magni quis
           voluptatem harum voluptate libero!
         </p>
-        {products.map((product, index) => {
-          return <Card data={product} index={index} key={product.name} />;
-        })}
+        <div className='flex flex-wrap justify-between pt-5'>
+          {bracelets.map((bracelet) => {
+            return <Item data={bracelet} key={bracelet.itemName} />;
+          })}
+        </div>
       </section>
     </Layout>
   );
 };
 
-export default ProductsPage;
+export default BraceletsPage;
