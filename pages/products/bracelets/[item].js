@@ -69,9 +69,9 @@ const BraceletProductPage = ({ itemData }) => {
                   <p className='leading-relaxed text-sm max-w-sm pb-2 text-gray-600'>
                     {itemData.itemDescripion}
                   </p>
-                  {itemData.itemBullets.map((bullet) => {
+                  {itemData.itemBullets.map((bullet, index) => {
                     return (
-                      <div className='flex py-1'>
+                      <div className='flex py-1' key={index}>
                         <svg
                           className='w-6 h-6 mr-2'
                           fill='none'

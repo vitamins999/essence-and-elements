@@ -5,7 +5,7 @@ const ReaderCard = ({ data }) => {
   return (
     <div className='flex flex-col text-gray-900'>
       <div className='lg:w-4/6'>
-        <div className='flex flex-col sm:flex-row mt-10'>
+        <div className='flex flex-col sm:flex-row mt-10 bg-gray-100 rounded-lg shadow-md px-6 py-5'>
           <div className='sm:w-1/3 text-center sm:pr-8 sm:py-8'>
             <div className='w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400'>
               <img className='rounded-full' src={`${data.imagePath}`} alt='' />
@@ -19,7 +19,9 @@ const ReaderCard = ({ data }) => {
             </div>
           </div>
           <div className='sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t sm:mt-0 text-center flex flex-col justify-center sm:text-left'>
-            <p className='leading-relaxed text-sm pb-5'>{data.longDetails}</p>
+            <p className='leading-relaxed text-sm pb-8 max-w-md'>
+              {data.longDetails}
+            </p>
             <div className='flex'>
               {data.tarot && (
                 <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
