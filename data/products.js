@@ -191,7 +191,12 @@ export const necklaces = [
   {
     itemName: 'Amythyst',
     itemDescripion:
-      'Helps relieve headache and fatigue, promotes good dreams and skin, and supports bones and joints.',
+      'Polished tumblestone amythyst crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Helps relieve headache and fatigue',
+      'Promotes good dreams and skin',
+      'Supports bones and joints',
+    ],
     itemPrice: 1299,
     itemImagePath: '/necklace-healing.jpeg',
     itemLinkPath: 'amythyst',
@@ -199,7 +204,9 @@ export const necklaces = [
   },
   {
     itemName: 'Jade',
-    itemDescripion: 'Supports the adrenal gland and relieves headaches.',
+    itemDescripion:
+      'Polished tumblestone jade crystal necklace, with spiritual and healing properties.',
+    itemBullets: ['Supports the adrenal gland', 'Relieves headaches'],
     itemPrice: 499,
     itemImagePath: '/necklace-green.jpeg',
     itemLinkPath: 'jade',
@@ -208,7 +215,11 @@ export const necklaces = [
   {
     itemName: 'Black Onyx',
     itemDescripion:
-      'Cleanses the air around you and rids the home of negative energy.',
+      'Polished tumblestone black onyx crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Cleanses the air around you',
+      'Rids the home of negative energy',
+    ],
     itemPrice: 999,
     itemImagePath: '/necklace-gemstone.jpeg',
     itemLinkPath: 'black-onyx',
@@ -217,7 +228,12 @@ export const necklaces = [
   {
     itemName: 'Opal',
     itemDescripion:
-      'Increases inspiration and creativity, and helps with P.M.S. and headaches.',
+      'Polished tumblestone opal crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Increases inspiration and creativity',
+      'Helps with P.M.S.',
+      'Relieves headaches',
+    ],
     itemPrice: 799,
     itemImagePath: '/necklace-purple.jpeg',
     itemLinkPath: 'opal',
@@ -225,7 +241,9 @@ export const necklaces = [
   },
   {
     itemName: 'Snowflake Obsidian',
-    itemDescripion: 'Spiritual protection and acceptance.',
+    itemDescripion:
+      'Polished tumblestone snowflake obsidian crystal necklace, with spiritual and healing properties.',
+    itemBullets: ['Promotes spiritual protection and acceptance'],
     itemPrice: 1299,
     itemImagePath: '/necklace-healing.jpeg',
     itemLinkPath: 'snowflake-obsidian',
@@ -233,7 +251,12 @@ export const necklaces = [
   },
   {
     itemName: 'Blue Sodalite',
-    itemDescripion: 'Helps with communication, self expression and truth.',
+    itemDescripion:
+      'Polished tumblestone blue sodalite crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Helps with communication',
+      'Promotes self expression and truth',
+    ],
     itemPrice: 499,
     itemImagePath: '/necklace-green.jpeg',
     itemLinkPath: 'blue-sodalite',
@@ -241,7 +264,13 @@ export const necklaces = [
   },
   {
     itemName: "Tiger's Eye",
-    itemDescripion: 'Promotes willpower, warrior spirit and self motivation.',
+    itemDescripion:
+      "Polished tumblestone Tiger's Eye crystal necklace, with spiritual and healing properties.",
+    itemBullets: [
+      'Promotes willpower',
+      'Aids inner warrior spirit',
+      'Increases self motivation',
+    ],
     itemPrice: 999,
     itemImagePath: '/necklace-gemstone.jpeg',
     itemLinkPath: 'tigers-eye',
@@ -250,7 +279,12 @@ export const necklaces = [
   {
     itemName: 'Brown Jasper',
     itemDescripion:
-      'Stimulates circulation and energy flow, and encourages endurance and willpower.',
+      'Polished tumblestone brown jasper crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Stimulates circulation and energy flow',
+      'Encourages endurance',
+      'Increases willpower',
+    ],
     itemPrice: 799,
     itemImagePath: '/necklace-purple.jpeg',
     itemLinkPath: 'brown-jasper',
@@ -259,7 +293,12 @@ export const necklaces = [
   {
     itemName: 'White Howlite',
     itemDescripion:
-      'Balances calcium levels in the body, teaches patience, and controls anger.',
+      'Polished tumblestone white howlite crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Balances calcium levels in the body',
+      'Teaches patience',
+      'Controls anger',
+    ],
     itemPrice: 1299,
     itemImagePath: '/necklace-healing.jpeg',
     itemLinkPath: 'white-howlite',
@@ -267,7 +306,9 @@ export const necklaces = [
   },
   {
     itemName: 'Turquoise Tumblestone',
-    itemDescripion: 'Balances and aligns chakras.',
+    itemDescripion:
+      'Polished turquoise tumblestone crystal necklace, with spiritual and healing properties.',
+    itemBullets: ['Balances and aligns chakras'],
     itemPrice: 499,
     itemImagePath: '/necklace-green.jpeg',
     itemLinkPath: 'turquoise-tumblestone',
