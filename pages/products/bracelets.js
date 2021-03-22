@@ -7,14 +7,12 @@ const BraceletsPage = () => {
     <Layout title='Bracelets'>
       <section className='relative px-28 pt-32 pb-20 z-10 min-h-screen w-full'>
         <h2 className='text-4xl tracking-wide font-heading uppercase'>
-          Bracelets
+          Vitamin D Bracelets
         </h2>
         <p className='my-10 max-w-4xl'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sit
-          accusantium eveniet, distinctio debitis, adipisci accusamus nihil amet
-          temporibus nisi minus sequi praesentium quaerat magni, maiores earum
-          facere animi! Ullam iusto molestiae provident inventore magni quis
-          voluptatem harum voluptate libero!
+          U.V wristbands helping you get the Vitamin D you need, without the
+          risk of sunburn. These wristbands monitor exposure to U.V rays, the
+          white beads turning darker the higher the U.V. index.
         </p>
         <div className='flex flex-wrap justify-between pt-5'>
           {bracelets.map((bracelet) => {

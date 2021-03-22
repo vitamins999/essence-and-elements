@@ -10,11 +10,7 @@ const NecklacesPage = () => {
           Crystal Necklaces
         </h2>
         <p className='my-10 max-w-4xl'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sit
-          accusantium eveniet, distinctio debitis, adipisci accusamus nihil amet
-          temporibus nisi minus sequi praesentium quaerat magni, maiores earum
-          facere animi! Ullam iusto molestiae provident inventore magni quis
-          voluptatem harum voluptate libero!
+          Polished tumblestone necklaces, with spirtual and healing properties.
         </p>
         <div className='flex flex-wrap justify-between pt-5'>
           {necklaces.map((necklace) => {

@@ -4,7 +4,11 @@ const Card = ({ data, index }) => {
   return (
     <Link href={`/${data.category}/${data.subcategory}`}>
       <a className='cursor-pointer'>
-        <div className='w-full bg-gray-200 my-10 flex rounded-md shadow-md'>
+        <div
+          className={`w-full bg-gray-200 my-10 flex rounded-md shadow-md ${
+            index % 2 !== 1 ? 'justify-start' : 'justify-between'
+          }`}
+        >
           {index % 2 !== 1 && (
             <img
               src={`${data.imagePath}`}

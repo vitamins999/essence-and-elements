@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
+import { formatter } from '../utils/format';
+
 const Item = ({ data }) => {
   return (
-    <Link href={`/${data.category}/${data.itemLinkPath}`}>
+    <Link href={`/products/${data.category}/${data.itemLinkPath}`}>
       <a className='cursor-pointer'>
         <motion.div className='w-84 h-96'>
           <motion.img
@@ -14,7 +16,9 @@ const Item = ({ data }) => {
             alt={`${data.itemName}`}
           />
           <p className='pt-3 text-gray-500'>{data.itemName}</p>
-          <p className='pt-2 tracking-wide text-gray-900'>{data.itemPrice}</p>
+          <p className='pt-2 tracking-wide text-gray-900'>
+            {formatter.format(data.itemPrice / 100)}
+          </p>
         </motion.div>
       </a>
     </Link>
