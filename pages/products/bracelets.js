@@ -30,7 +30,7 @@ const BraceletsPage = () => {
         <h2 className='text-4xl tracking-wide font-heading uppercase'>
           Vitamin D Bracelets
         </h2>
-        <p className='mb-10 mt-5 max-w-4xl'>
+        <p className='mb-10 mt-5 max-w-4xl text-gray-600'>
           U.V wristbands helping you get the Vitamin D you need, without the
           risk of sunburn. These wristbands monitor exposure to U.V rays, the
           white beads turning darker the higher the U.V. index.

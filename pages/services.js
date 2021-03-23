@@ -20,9 +20,13 @@ const ServicesPage = () => {
           <h2 className='inline-block'>Services</h2>
         </div>
         <h2 className='text-4xl tracking-wide font-heading uppercase'>
-          Our Services
+          Services
         </h2>
-        <p className='mb-10 mt-5 max-w-4xl'>
+        <h3 className='mt-5 text-gray-900 text-lg font-medium'>
+          Our wide range of spiritual and healing services, suitable for
+          everyone.
+        </h3>
+        <p className='mb-10 mt-3 max-w-4xl text-gray-600'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
           error quo molestias quia iste, tenetur ut beatae totam nesciunt
           mollitia consequatur nemo numquam obcaecati dicta consequuntur. Labore

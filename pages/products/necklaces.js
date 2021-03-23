@@ -30,7 +30,7 @@ const NecklacesPage = () => {
         <h2 className='text-4xl tracking-wide font-heading uppercase'>
           Crystal Necklaces
         </h2>
-        <p className='mb-10 mt-5 max-w-4xl'>
+        <p className='mb-10 mt-5 max-w-4xl text-gray-600'>
           Polished tumblestone necklaces, with spirtual and healing properties.
         </p>
         <div className='flex flex-wrap justify-between pt-5'>

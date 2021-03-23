@@ -22,7 +22,10 @@ const ProductsPage = () => {
         <h2 className='text-4xl tracking-wide font-heading uppercase'>
           Products
         </h2>
-        <p className='mb-10 mt-5 max-w-4xl'>
+        <h3 className='mt-5 text-gray-900 text-lg font-medium'>
+          Our wide range of spiritual and healing merchandise.
+        </h3>
+        <p className='mb-10 mt-3 max-w-4xl text-gray-600'>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sit
           accusantium eveniet, distinctio debitis, adipisci accusamus nihil amet
           temporibus nisi minus sequi praesentium quaerat magni, maiores earum
