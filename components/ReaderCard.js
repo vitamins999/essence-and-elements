@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const ReaderCard = ({ data }) => {
+const ReaderCard = ({ data, tag }) => {
   return (
     <div className='flex flex-col text-gray-900'>
       <div className='lg:w-4/6'>
@@ -23,7 +23,7 @@ const ReaderCard = ({ data }) => {
               {data.longDetails}
             </p>
             <div className='flex'>
-              {data.tarot && (
+              {data.tarot && tag && (
                 <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
                   <Link href='/services/tarot'>
                     <a
@@ -35,7 +35,7 @@ const ReaderCard = ({ data }) => {
                   </Link>
                 </motion.div>
               )}
-              {data.crystalHealing && (
+              {data.crystalHealing && tag && (
                 <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
                   <Link href='/services/crystalhealing'>
                     <a className='bg-green-700 w-40 text-green-50 rounded-lg py-3 px-5 text-center text-sm tracking-wide cursor-pointer'>
@@ -44,7 +44,7 @@ const ReaderCard = ({ data }) => {
                   </Link>
                 </motion.div>
               )}
-              {data.reiki && (
+              {data.reiki && tag && (
                 <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
                   <Link href='/services/reiki'>
                     <a
