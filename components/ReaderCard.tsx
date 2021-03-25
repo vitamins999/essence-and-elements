@@ -1,7 +1,14 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const ReaderCard = ({ data, tag }) => {
+import { Reader } from '../interfaces/index';
+
+type Props = {
+  data: Reader;
+  tag?: boolean;
+};
+
+const ReaderCard = ({ data, tag }: Props) => {
   return (
     <div className='flex flex-col text-gray-900'>
       <div className='lg:w-4/6'>
@@ -29,10 +36,7 @@ const ReaderCard = ({ data, tag }) => {
                   className='md:mr-5 mr-2'
                 >
                   <Link href='/services/tarot'>
-                    <a
-                      whileHover={{ scale: 1.1 }}
-                      className='bg-yellow-700 w-20 text-yellow-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'
-                    >
+                    <a className='bg-yellow-700 w-20 text-yellow-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'>
                       Tarot
                     </a>
                   </Link>
@@ -56,10 +60,7 @@ const ReaderCard = ({ data, tag }) => {
                   className='md:mr-5 mr-2'
                 >
                   <Link href='/services/reiki'>
-                    <a
-                      whileHover={{ scale: 1.1 }}
-                      className='bg-purple-700 w-20 text-purple-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'
-                    >
+                    <a className='bg-purple-700 w-20 text-purple-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'>
                       Reiki
                     </a>
                   </Link>

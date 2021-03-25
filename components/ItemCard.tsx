@@ -3,7 +3,13 @@ import { motion } from 'framer-motion';
 
 import { formatter } from '../utils/format';
 
-const Item = ({ data }) => {
+import { Item } from '../interfaces/index';
+
+type Props = {
+  data: Item;
+};
+
+const ItemCard = ({ data }: Props) => {
   return (
     <Link href={`/products/${data.category}/${data.itemLinkPath}`}>
       <a className='cursor-pointer'>
@@ -25,4 +31,4 @@ const Item = ({ data }) => {
   );
 };
 
-export default Item;
+export default ItemCard;

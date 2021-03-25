@@ -1,6 +1,13 @@
 import Link from 'next/link';
 
-const Card = ({ data, index }) => {
+import { Service } from '../interfaces/index';
+
+type Props = {
+  data: Service;
+  index: number;
+};
+
+const Card = ({ data, index }: Props) => {
   return (
     <Link href={`/${data.category}/${data.subcategory}`}>
       <a className='cursor-pointer'>

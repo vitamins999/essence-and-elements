@@ -1,7 +1,11 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const Menu = ({ menuOpen }) => {
+type Props = {
+  menuOpen: boolean;
+};
+
+const Menu = ({ menuOpen }: Props) => {
   return (
     <motion.nav
       initial={false}

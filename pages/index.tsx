@@ -10,7 +10,6 @@ const HomePage = () => {
         <video
           className='z-0 opacity-40 object-cover absolute top-0 left-0 w-screen h-screen'
           src='/background.mp4'
-          type='video/mp4'
           muted
           loop
           autoPlay

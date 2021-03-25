@@ -1,4 +1,6 @@
-export const products = [
+import { Product, Item } from '../interfaces/index';
+
+export const products: Product[] = [
   {
     name: 'Vitamin D Bracelets',
     text: 'Colour changing wristbands which monitor exposure to U.V. rays.',
@@ -16,10 +18,10 @@ export const products = [
   },
 ];
 
-export const bracelets = [
+export const bracelets: Item[] = [
   {
     itemName: 'Green & White',
-    itemDescripion:
+    itemDescription:
       'A beautiful green and white Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -33,7 +35,7 @@ export const bracelets = [
   },
   {
     itemName: 'Blue & Pink',
-    itemDescripion:
+    itemDescription:
       'A beautiful blue and pink Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -47,7 +49,7 @@ export const bracelets = [
   },
   {
     itemName: 'Silver & Black',
-    itemDescripion:
+    itemDescription:
       'A beautiful silver and black Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -61,7 +63,7 @@ export const bracelets = [
   },
   {
     itemName: 'White & Black',
-    itemDescripion:
+    itemDescription:
       'A beautiful white and black Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -75,7 +77,7 @@ export const bracelets = [
   },
   {
     itemName: 'Pink & Black',
-    itemDescripion:
+    itemDescription:
       'A beautiful pink and black Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -89,7 +91,7 @@ export const bracelets = [
   },
   {
     itemName: 'Pink & White',
-    itemDescripion:
+    itemDescription:
       'A beautiful pink and white Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -103,7 +105,7 @@ export const bracelets = [
   },
   {
     itemName: 'Dice',
-    itemDescripion:
+    itemDescription:
       'A beautiful Vitamin D bracelet with a dice design. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -117,7 +119,7 @@ export const bracelets = [
   },
   {
     itemName: 'Stars',
-    itemDescripion:
+    itemDescription:
       'A beautiful Vitamin D bracelet with a star design. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -131,7 +133,7 @@ export const bracelets = [
   },
   {
     itemName: 'Pink & White Crystal',
-    itemDescripion:
+    itemDescription:
       'A beautiful pink and white Vitamin D bracelet with a crystal design. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -145,7 +147,7 @@ export const bracelets = [
   },
   {
     itemName: 'Red & White',
-    itemDescripion:
+    itemDescription:
       'A beautiful red and white Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -159,7 +161,7 @@ export const bracelets = [
   },
   {
     itemName: 'Black & Red Stars',
-    itemDescripion:
+    itemDescription:
       'A beautiful black and red Vitamin D bracelet with a star design. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -173,7 +175,7 @@ export const bracelets = [
   },
   {
     itemName: 'Purple & White',
-    itemDescripion:
+    itemDescription:
       'A beautiful purple and white Vitamin D bracelet. The darker the white beads glow, the greater the UV index.',
     itemBullets: [
       'Wrist size: Adult',
@@ -187,10 +189,10 @@ export const bracelets = [
   },
 ];
 
-export const necklaces = [
+export const necklaces: Item[] = [
   {
     itemName: 'Amythyst',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone amythyst crystal necklace, with spiritual and healing properties.',
     itemBullets: [
       'Helps relieve headache and fatigue',
@@ -204,7 +206,7 @@ export const necklaces = [
   },
   {
     itemName: 'Jade',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone jade crystal necklace, with spiritual and healing properties.',
     itemBullets: ['Supports the adrenal gland', 'Relieves headaches'],
     itemPrice: 499,
@@ -214,7 +216,7 @@ export const necklaces = [
   },
   {
     itemName: 'Black Onyx',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone black onyx crystal necklace, with spiritual and healing properties.',
     itemBullets: [
       'Cleanses the air around you',
@@ -227,7 +229,7 @@ export const necklaces = [
   },
   {
     itemName: 'Opal',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone opal crystal necklace, with spiritual and healing properties.',
     itemBullets: [
       'Increases inspiration and creativity',
@@ -241,7 +243,7 @@ export const necklaces = [
   },
   {
     itemName: 'Snowflake Obsidian',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone snowflake obsidian crystal necklace, with spiritual and healing properties.',
     itemBullets: ['Promotes spiritual protection and acceptance'],
     itemPrice: 1299,
@@ -251,7 +253,7 @@ export const necklaces = [
   },
   {
     itemName: 'Blue Sodalite',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone blue sodalite crystal necklace, with spiritual and healing properties.',
     itemBullets: [
       'Helps with communication',
@@ -264,7 +266,7 @@ export const necklaces = [
   },
   {
     itemName: "Tiger's Eye",
-    itemDescripion:
+    itemDescription:
       "Polished tumblestone Tiger's Eye crystal necklace, with spiritual and healing properties.",
     itemBullets: [
       'Promotes willpower',
@@ -278,7 +280,7 @@ export const necklaces = [
   },
   {
     itemName: 'Brown Jasper',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone brown jasper crystal necklace, with spiritual and healing properties.',
     itemBullets: [
       'Stimulates circulation and energy flow',
@@ -292,7 +294,7 @@ export const necklaces = [
   },
   {
     itemName: 'White Howlite',
-    itemDescripion:
+    itemDescription:
       'Polished tumblestone white howlite crystal necklace, with spiritual and healing properties.',
     itemBullets: [
       'Balances calcium levels in the body',
@@ -306,7 +308,7 @@ export const necklaces = [
   },
   {
     itemName: 'Turquoise Tumblestone',
-    itemDescripion:
+    itemDescription:
       'Polished turquoise tumblestone crystal necklace, with spiritual and healing properties.',
     itemBullets: ['Balances and aligns chakras'],
     itemPrice: 499,

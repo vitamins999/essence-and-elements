@@ -1,4 +1,6 @@
-export const readers = [
+import { Reader } from '../interfaces/index';
+
+export const readers: Reader[] = [
   {
     name: 'Davina Sperglord',
     shortDetails:

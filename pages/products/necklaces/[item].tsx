@@ -1,10 +1,17 @@
 import Link from 'next/link';
+import { GetStaticProps, GetStaticPaths } from 'next';
 
 import Layout from '../../../components/Layout';
 import { necklaces } from '../../../data/products';
 import { formatter } from '../../../utils/format';
 
-const BraceletProductPage = ({ itemData }) => {
+import { Item } from '../../../interfaces/index';
+
+type Props = {
+  itemData: Item;
+};
+
+const BraceletProductPage = ({ itemData }: Props) => {
   const productType = 'Necklace';
   const productTypeFull = 'Crystal Necklace';
 
@@ -67,7 +74,7 @@ const BraceletProductPage = ({ itemData }) => {
                 </div>
                 <div className='font-medium mt-2'>
                   <p className='leading-relaxed lg:text-sm text-xs max-w-sm pb-2 text-gray-600'>
-                    {itemData.itemDescripion}
+                    {itemData.itemDescription}
                   </p>
                   {itemData.itemBullets.map((bullet, index) => {
                     return (
@@ -107,7 +114,7 @@ const BraceletProductPage = ({ itemData }) => {
   );
 };
 
-export const getStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const itemData = necklaces.find((necklace) => {
     return necklace.itemLinkPath === context.params.item;
   });
@@ -117,7 +124,7 @@ export const getStaticProps = async (context) => {
   };
 };
 
-export const getStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [
       { params: { item: 'amythyst' } },

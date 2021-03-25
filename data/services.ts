@@ -1,4 +1,6 @@
-export const services = [
+import { Service } from '../interfaces/index';
+
+export const services: Service[] = [
   {
     name: 'Tarot',
     text:

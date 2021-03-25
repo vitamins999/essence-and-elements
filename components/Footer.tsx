@@ -1,7 +1,11 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const Footer = ({ footerFixed }) => {
+type Props = {
+  footerFixed?: boolean;
+};
+
+const Footer = ({ footerFixed }: Props) => {
   return (
     <footer
       className={`${

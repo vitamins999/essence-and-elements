@@ -36,7 +36,7 @@ const ContactPage = () => {
                 <div className='p-2 w-1/2'>
                   <div className='relative'>
                     <label
-                      for='name'
+                      htmlFor='name'
                       className='leading-7 md:text-sm text-xs text-gray-900 font-medium'
                     >
                       Name
@@ -54,7 +54,7 @@ const ContactPage = () => {
                 <div className='p-2 w-1/2'>
                   <div className='relative'>
                     <label
-                      for='email'
+                      htmlFor='email'
                       className='leading-7 md:text-sm text-xs text-gray-900 font-medium'
                     >
                       Email
@@ -72,7 +72,7 @@ const ContactPage = () => {
                 <div className='p-2 w-full'>
                   <div className='relative'>
                     <label
-                      for='message'
+                      htmlFor='message'
                       className='leading-7 md:text-sm text-xs text-gray-900 font-medium'
                     >
                       Questions or comments

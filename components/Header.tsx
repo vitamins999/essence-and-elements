@@ -1,7 +1,13 @@
+import { Dispatch, SetStateAction } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-const Header = ({ menuOpen, setMenuOpen }) => {
+type Props = {
+  menuOpen: boolean;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+const Header = ({ menuOpen, setMenuOpen }: Props) => {
   return (
     <header
       className={`flex w-full md:text-lg sm:text-base text-xs z-50 absolute top-0 right-0 justify-between md:px-28 px-10 py-10 items-center`}
