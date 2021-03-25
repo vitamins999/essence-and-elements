@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Header = ({ menuOpen, setMenuOpen }) => {
   return (
     <header
-      className={`flex w-full text-lg z-50 absolute top-0 right-0 justify-between px-28 py-10 items-center`}
+      className={`flex w-full md:text-lg sm:text-base text-xs z-50 absolute top-0 right-0 justify-between md:px-28 px-10 py-10 items-center`}
     >
       <Link href='/'>
         <a className='font-heading uppercase font-bold cursor-pointer hover:text-purple-700 transition ease-in-out duration-150'>

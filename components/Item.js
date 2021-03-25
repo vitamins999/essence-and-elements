@@ -7,11 +7,11 @@ const Item = ({ data }) => {
   return (
     <Link href={`/products/${data.category}/${data.itemLinkPath}`}>
       <a className='cursor-pointer'>
-        <motion.div className='w-84 h-96'>
+        <motion.div className='lg:w-84 lg:h-96 w-64 h-72'>
           <motion.img
             whileHover={{ scale: 1.03 }}
             transition={{ duration: 0.15 }}
-            className='w-full h-64 object-cover rounded-md hover:shadow-md'
+            className='w-full lg:h-64 h-48 object-cover rounded-md hover:shadow-md'
             src={`${data.itemImagePath}`}
             alt={`${data.itemName}`}
           />

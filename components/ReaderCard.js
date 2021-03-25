@@ -15,20 +15,23 @@ const ReaderCard = ({ data, tag }) => {
                 {data.name}
               </h2>
               <div className='w-12 h-1 bg-purple-700 rounded mt-2 mb-4'></div>
-              <p className='text-xs'>{data.shortDetails}</p>
+              <p className='text-xs pb-3'>{data.shortDetails}</p>
             </div>
           </div>
-          <div className='sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t sm:mt-0 text-center flex flex-col justify-center sm:text-left'>
+          <div className='sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t pt-3 sm:mt-0 text-center flex flex-col justify-center sm:text-left'>
             <p className='leading-relaxed text-sm pb-8 max-w-md'>
               {data.longDetails}
             </p>
-            <div className='flex'>
+            <div className='flex flex-wrap'>
               {data.tarot && tag && (
-                <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className='md:mr-5 mr-2'
+                >
                   <Link href='/services/tarot'>
                     <a
                       whileHover={{ scale: 1.1 }}
-                      className='bg-yellow-700 w-20 text-yellow-50 rounded-lg py-3 px-5 text-center text-sm tracking-wide cursor-pointer'
+                      className='bg-yellow-700 w-20 text-yellow-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'
                     >
                       Tarot
                     </a>
@@ -36,20 +39,26 @@ const ReaderCard = ({ data, tag }) => {
                 </motion.div>
               )}
               {data.crystalHealing && tag && (
-                <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className='md:mr-5 mr-2'
+                >
                   <Link href='/services/crystalhealing'>
-                    <a className='bg-green-700 w-40 text-green-50 rounded-lg py-3 px-5 text-center text-sm tracking-wide cursor-pointer'>
+                    <a className='bg-green-700 w-40 text-green-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'>
                       Crystal Healing
                     </a>
                   </Link>
                 </motion.div>
               )}
               {data.reiki && tag && (
-                <motion.div whileHover={{ scale: 1.1 }} className='mr-5'>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className='md:mr-5 mr-2'
+                >
                   <Link href='/services/reiki'>
                     <a
                       whileHover={{ scale: 1.1 }}
-                      className='bg-purple-700 w-20 text-purple-50 rounded-lg py-3 px-5 text-center text-sm tracking-wide cursor-pointer'
+                      className='bg-purple-700 w-20 text-purple-50 rounded-lg py-3 px-5 text-center md:text-sm text-xs tracking-wide cursor-pointer'
                     >
                       Reiki
                     </a>

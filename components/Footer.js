@@ -3,7 +3,11 @@ import { motion } from 'framer-motion';
 
 const Footer = ({ footerFixed }) => {
   return (
-    <footer className={`${footerFixed && 'absolute bottom-20'} z-10 px-28`}>
+    <footer
+      className={`${
+        footerFixed && 'absolute md:bottom-10 bottom-5'
+      } z-10 md:px-28 px-10`}
+    >
       <ul
         className={`${
           footerFixed ? 'justify-center' : 'pb-10'

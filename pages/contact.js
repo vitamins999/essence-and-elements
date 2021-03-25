@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 const ContactPage = () => {
   return (
     <Layout title='Contact Us'>
-      <section className='relative px-28 pt-32 pb-20 z-10 min-h-screen w-full'>
+      <section className='relative md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-80'>
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>
@@ -17,13 +17,13 @@ const ContactPage = () => {
           <span className='text-gray-500 px-2'> / </span>
           <h2 className='inline-block'>Contact Us</h2>
         </div>
-        <h2 className='text-4xl tracking-wide font-heading uppercase'>
+        <h2 className='lg:text-4xl md:text-3xl sm:text-2xl text-xl tracking-wide font-heading uppercase'>
           Contact Us
         </h2>
-        <h3 className='mt-5 text-gray-900 text-lg font-medium'>
+        <h3 className='mt-5 text-gray-900 lg:text-lg md:text-base sm:text-sm text-xs font-medium'>
           Thank you for your interest in Essence & Elements!
         </h3>
-        <p className='mt-3 max-w-4xl text-gray-600'>
+        <p className='mt-3 max-w-4xl text-gray-600 lg:text-base md:text-sm text-xs'>
           Want to learn more about the services and products we offer? Submit
           the form below and our sales representative will contact you soon.
         </p>
@@ -37,7 +37,7 @@ const ContactPage = () => {
                   <div className='relative'>
                     <label
                       for='name'
-                      className='leading-7 text-sm text-gray-900 font-medium'
+                      className='leading-7 md:text-sm text-xs text-gray-900 font-medium'
                     >
                       Name
                     </label>
@@ -55,7 +55,7 @@ const ContactPage = () => {
                   <div className='relative'>
                     <label
                       for='email'
-                      className='leading-7 text-sm text-gray-900 font-medium'
+                      className='leading-7 md:text-sm text-xs text-gray-900 font-medium'
                     >
                       Email
                     </label>
@@ -73,7 +73,7 @@ const ContactPage = () => {
                   <div className='relative'>
                     <label
                       for='message'
-                      className='leading-7 text-sm text-gray-900 font-medium'
+                      className='leading-7 md:text-sm text-xs text-gray-900 font-medium'
                     >
                       Questions or comments
                     </label>
@@ -88,7 +88,7 @@ const ContactPage = () => {
                 <div className='p-2 w-full'>
                   <button
                     type='submit'
-                    className='flex justify-center w-full text-purple-50 bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 transition duration-200 ease-in-out rounded-md text-md'
+                    className='flex justify-center w-full text-purple-50 bg-purple-500 border-0 py-3 px-8 focus:outline-none hover:bg-purple-600 transition duration-200 ease-in-out rounded-md md:text-md text-sm'
                   >
                     Submit message
                   </button>

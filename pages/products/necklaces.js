@@ -7,7 +7,7 @@ import { necklaces } from '../../data/products';
 const NecklacesPage = () => {
   return (
     <Layout title='Crystal Necklaces'>
-      <section className='relative px-28 pt-32 pb-20 z-10 min-h-screen w-full'>
+      <section className='relative md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'>
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>
@@ -33,7 +33,7 @@ const NecklacesPage = () => {
         <p className='mb-10 mt-5 max-w-4xl text-gray-600'>
           Polished tumblestone necklaces, with spirtual and healing properties.
         </p>
-        <div className='flex flex-wrap justify-between pt-5'>
+        <div className='flex md:flex-wrap md:justify-between md:flex-row flex-col items-center pt-5'>
           {necklaces.map((necklace) => {
             return <Item data={necklace} key={necklace.itemName} />;
           })}

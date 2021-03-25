@@ -11,7 +11,7 @@ const ReikiPage = () => {
 
   return (
     <Layout title='Reiki Services'>
-      <section className='relative px-28 pt-32 pb-20 z-10 min-h-screen w-full'>
+      <section className='relative md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'>
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>
@@ -33,7 +33,7 @@ const ReikiPage = () => {
         </div>
         <div className='grid grid-cols-2 gap-10 bg-gray-200 p-5 rounded-lg'>
           <div className='flex items-center'>
-            <h2 className='text-5xl tracking-wide font-heading uppercase'>
+            <h2 className='sm:text-5xl text-xl tracking-wide font-heading uppercase'>
               Reiki Services
             </h2>
           </div>
@@ -41,7 +41,7 @@ const ReikiPage = () => {
             <img
               src='/reiki-1.jpeg'
               alt='logo'
-              className='rounded-full object-cover w-80 h-80'
+              className='rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'
             />
           </div>
         </div>
