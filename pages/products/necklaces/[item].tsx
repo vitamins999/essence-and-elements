@@ -137,6 +137,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
       { params: { item: 'brown-jasper' } },
       { params: { item: 'white-howlite' } },
       { params: { item: 'turquoise-tumblestone' } },
+      { params: { item: 'feldspar' } },
+      { params: { item: 'petrified-wood' } },
     ],
     fallback: false,
   };

@@ -316,4 +316,31 @@ export const necklaces: Item[] = [
     itemLinkPath: 'turquoise-tumblestone',
     category: 'necklaces',
   },
+  {
+    itemName: 'Feldspar',
+    itemDescription:
+      'Polished feldspar tumblestone crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Helps to stimulate creativity and motivation',
+      'Aligns the chakras',
+    ],
+    itemPrice: 1499,
+    itemImagePath: '/necklace-purple.jpeg',
+    itemLinkPath: 'feldspar',
+    category: 'necklaces',
+  },
+  {
+    itemName: 'Petrified Wood',
+    itemDescription:
+      'Polished petrified wood tumblestone crystal necklace, with spiritual and healing properties.',
+    itemBullets: [
+      'Enables you to establish deep roots',
+      'Grounds you in times of panic and anxiety',
+      'Promotes meditation',
+    ],
+    itemPrice: 999,
+    itemImagePath: '/necklace-gemstone.jpeg',
+    itemLinkPath: 'petrified-wood',
+    category: 'necklaces',
+  },
 ];
