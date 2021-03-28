@@ -11,7 +11,7 @@ const Menu = ({ menuOpen }: Props) => {
       initial={false}
       animate={menuOpen ? { x: 0 } : { x: 500 }}
       transition={{ type: 'tween' }}
-      className={`bg-white font-body fixed right-0 top-0 w-60 h-full flex items-center justify-center z-40 text-gray-900`}
+      className={`bg-white font-body fixed right-0 top-0 w-60 xl:w-108 h-full flex items-center justify-center z-40 text-gray-900`}
     >
       <ul className='text-2xl'>
         <li>

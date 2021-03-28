@@ -9,6 +9,7 @@ module.exports = {
       },
       spacing: {
         84: '21rem',
+        108: '27rem',
       },
       screens: {
         iPadPro: { raw: '(width: 1024px) and (height: 1366px)' },

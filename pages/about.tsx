@@ -7,7 +7,7 @@ import { readers } from '../data/readers';
 const AboutPage = () => {
   return (
     <Layout title='About Us'>
-      <section className='relative md:px-28 px-10 py-32 z-10 min-h-screen w-full'>
+      <section className='relative xl:px-56 md:px-28 px-10 py-32 z-10 min-h-screen w-full'>
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>

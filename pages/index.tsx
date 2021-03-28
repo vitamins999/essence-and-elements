@@ -14,7 +14,7 @@ const HomePage = () => {
           loop
           autoPlay
         ></video>
-        <section className='relative md:px-28 px-10 z-10 min-h-screen w-full flex flex-col justify-center'>
+        <section className='relative xl:px-56 md:px-28 px-10 z-10 min-h-screen w-full flex flex-col justify-center'>
           <div className=''>
             <h2 className='lg:text-5xl md:text-3xl sm:text-2xl text-xl uppercase font-extrabold tracking-wider'>
               Believing In

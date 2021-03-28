@@ -10,7 +10,7 @@ const Footer = ({ footerFixed }: Props) => {
     <footer
       className={`${
         footerFixed && 'absolute md:bottom-10 bottom-5'
-      } z-10 md:px-28 px-10`}
+      } z-10 xl:px-56 md:px-28 px-10`}
     >
       <ul
         className={`${
