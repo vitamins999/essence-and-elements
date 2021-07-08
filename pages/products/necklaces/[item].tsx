@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 import Layout from '../../../components/Layout';
@@ -49,11 +50,14 @@ const BraceletProductPage = ({ itemData }: Props) => {
         <section className='text-gray-600 body-font overflow-hidden'>
           <div className='pt-3'>
             <div className='w-full lg:h-96 h-full grid lg:grid-cols-2 lg:grid-rows-1 grid-cols-1 grid-rows-2 lg:gap-10 iPadPro:grid-cols-1 iPadPro:grid-rows-2 iPadPro:h-full'>
-              <img
-                alt={itemData.itemName}
-                className='lg:h-96 sm:h-72 h-52 w-full object-cover rounded-lg'
-                src={`${itemData.itemImagePath}`}
-              />
+              <div className='relative lg:h-96 sm:h-72 h-52 w-full object-cover rounded-lg'>
+                <Image
+                  alt={itemData.itemName}
+                  className='lg:h-96 sm:h-72 h-52 w-full object-cover rounded-lg'
+                  src={`${itemData.itemImagePath}`}
+                  layout='fill'
+                />
+              </div>
               <div className='w-full flex flex-col justify-between sm:mt-0 -mt-10'>
                 <div>
                   <h2 className='lg:text-sm text-xs font-heading text-purple-500 tracking-tight uppercase'>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { Service } from '../interfaces/index';
 
@@ -17,9 +18,11 @@ const Card = ({ data, index }: Props) => {
           }`}
         >
           {index % 2 !== 1 && (
-            <img
+            <Image
               src={`${data.imagePath}`}
               alt=''
+              height={345}
+              width={520}
               className='h-72 lg:rounded-l-md lg:rounded-t-none rounded-t-md object-cover'
             />
           )}
@@ -33,8 +36,10 @@ const Card = ({ data, index }: Props) => {
             </div>
           </div>
           {index % 2 === 1 && (
-            <img
+            <Image
               src={`${data.imagePath}`}
+              height={345}
+              width={520}
               alt=''
               className='h-72 lg:rounded-r-md lg:rounded-b-none rounded-b-md object-cover'
             />
