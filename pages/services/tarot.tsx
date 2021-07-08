@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Layout from '../../components/Layout';
 import ReaderCard from '../../components/ReaderCard';
@@ -38,11 +39,14 @@ const TarotPage = () => {
             </h2>
           </div>
           <div className='w-full h-full flex justify-center'>
-            <img
-              src='/tarot-1.jpeg'
-              alt='logo'
-              className='rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'
-            />
+            <div className=' relative rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'>
+              <Image
+                src='/tarot-1.jpeg'
+                layout='fill'
+                alt='logo'
+                className='rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'
+              />
+            </div>
           </div>
         </div>
         <h3 className='mt-5 text-gray-900 text-lg font-medium'>

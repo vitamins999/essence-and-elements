@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Layout from '../components/Layout';
 import ReaderCard from '../components/ReaderCard';
@@ -33,11 +34,14 @@ const AboutPage = () => {
             </p>
           </div>
           <div className='w-full h-full flex justify-center items-center'>
-            <img
-              src='/hand-holding.jpeg'
-              alt='logo'
-              className='rounded-full object-cover lg:w-80 lg:h-80 lg-mt-0 mt-5 w-40 h-40'
-            />
+            <div className='relative rounded-full object-cover lg:w-80 lg:h-80 lg-mt-0 mt-5 w-40 h-40'>
+              <Image
+                src='/hand-holding.jpeg'
+                layout='fill'
+                alt='logo'
+                className='rounded-full object-cover lg:w-80 lg:h-80 lg-mt-0 mt-5 w-40 h-40'
+              />
+            </div>
           </div>
         </div>
         {readers.map((reader) => {

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import { Reader } from '../interfaces/index';
@@ -15,7 +16,13 @@ const ReaderCard = ({ data, tag }: Props) => {
         <div className='flex flex-col sm:flex-row mt-10 bg-gray-100 rounded-lg shadow-md px-6 py-5'>
           <div className='sm:w-1/3 text-center sm:pr-8 sm:py-8'>
             <div className='w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400'>
-              <img className='rounded-full' src={`${data.imagePath}`} alt='' />
+              <Image
+                className='rounded-full object-cover object-center'
+                src={`${data.imagePath}`}
+                alt=''
+                width={80}
+                height={80}
+              />
             </div>
             <div className='flex flex-col items-center text-center justify-center'>
               <h2 className='font-medium title-font mt-4 text-gray-900 text-lg'>
