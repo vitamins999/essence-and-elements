@@ -22,7 +22,7 @@ But those solutions are pricey, both through man hours to create the solution, a
 
 My solution? Simplify everything and create a frontend only website. No backend, no database. Just a list of all the products they offer (stored as a simple Javascript Object in a data folder) with a link to buy the item that redirects to an Etsy page for the item (which the client had already created). The amount of different items is very small and does not change very often, making this solution have very little overhead.
 
-As the services are personalised to the customer, and the client wanted to communicate directly with their customers through email, the pages for services were simplified to each having a contact form that emails the client with all the necessary information the client would want from their customer. This allows them to arrange payment for their services on their own (and allow for easy scaling up in the future to include integrated Paypal functions in the website from the form submittal if the client wishes to pay for more work).
+As the client's services are personalised to the customer, and the client wanted to communicate directly with their customers through email, the pages for services were simplified to each having their own contact form that emails the client with all the necessary information the client would want from their customer. This allows the client to arrange payment for their services on their own (and allow for easy scaling up in the future to include integrated Paypal functions in the website after the form submittal, if the client wishes to pay for more work).
 
 ## Hosting
 
