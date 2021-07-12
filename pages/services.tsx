@@ -27,11 +27,9 @@ const ServicesPage = () => {
           everyone.
         </h3>
         <p className='mb-10 mt-3 max-w-4xl text-gray-600 md:text-base text-sm'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          error quo molestias quia iste, tenetur ut beatae totam nesciunt
-          mollitia consequatur nemo numquam obcaecati dicta consequuntur. Labore
-          quo similique dolor enim. Illum necessitatibus error blanditiis, autem
-          ut odit sapiente quo.
+          As a client, you will be truly valued at Essence & Elements. We are
+          kind, sensitive and empathic to all your needs - whether it be a
+          personalised Tarot reading, Crystal Healing or the power of Reiki.
         </p>
         {services.map((service, index) => {
           return <Card data={service} index={index} key={service.name} />;

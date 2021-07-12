@@ -53,21 +53,19 @@ const ReikiPage = () => {
           What is Reiki?
         </h3>
         <p className='mt-3 max-w-4xl text-gray-600'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-          deleniti aspernatur eius nostrum enim magnam obcaecati voluptatem
-          velit. Alias perspiciatis iure saepe, mollitia odit delectus libero
-          officia ipsum sed! Eaque quis praesentium nulla officiis aut
-          perferendis facilis dolorum. Placeat, voluptate?
+          Reiki (pronounced 'Ray-Key') is a Japanese holistic healing practice.
+          It aims to help balance a person's chakras and overall flow of energy
+          throughout the body. Reiki can be performed either in person or by
+          distance.
         </p>
         <h3 className='mt-5 text-gray-900 text-lg font-medium'>
           How can our Reiki healing benefit your body and mind?
         </h3>
         <p className='mt-3 max-w-4xl text-gray-600'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          reprehenderit quod, aspernatur, veniam beatae quia veritatis autem
-          minus illo officia aut magni, ipsa blanditiis atque quibusdam sequi
-          saepe magnam recusandae quaerat perspiciatis cupiditate consectetur
-          explicabo. Quos ex vero nihil beatae?
+          Reiki can help with a range of mental and physical ailments, including
+          stress relief, anxiety, depression, pain management, insomnia,
+          digestive issues and overall well-being. It is also effective in
+          increasing your awareness, insight, wisdom and personal growth.
         </p>
         {!readersExist && (
           <p className='mt-5 max-w-4xl text-red-600 italic'>
