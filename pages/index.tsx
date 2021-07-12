@@ -17,15 +17,15 @@ const HomePage = () => {
         <section className='relative xl:px-56 md:px-28 px-10 z-10 min-h-screen w-full flex flex-col justify-center'>
           <div className=''>
             <h2 className='lg:text-5xl md:text-3xl sm:text-2xl text-xl uppercase font-extrabold tracking-wider'>
-              Believing In
+              Nurturing Your
             </h2>
             <h3 className='lg:text-4xl md:text-2xl sm:text-xl text-lg uppercase font-bold tracking-wide'>
-              A Better You
+              Soul & Spirit
             </h3>
             <p className='mt-5 md:max-w-4xl max-w-sm xl:text-lg md:text-sm text-xs'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab
-              exercitationem nostrum tempore soluta dolorem est vel mollitia
-              libero modi laudantium.
+              Essence & Elements offer intuitive Tarot, Reiki and Crystal
+              Healing. We invite you to explore our complementary healing and
+              spiritual guidance.
             </p>
             <Link href='/services'>
               <motion.button

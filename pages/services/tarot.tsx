@@ -53,21 +53,23 @@ const TarotPage = () => {
           What is Tarot?
         </h3>
         <p className='mt-3 max-w-4xl text-gray-600'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-          deleniti aspernatur eius nostrum enim magnam obcaecati voluptatem
-          velit. Alias perspiciatis iure saepe, mollitia odit delectus libero
-          officia ipsum sed! Eaque quis praesentium nulla officiis aut
-          perferendis facilis dolorum. Placeat, voluptate?
+          Tarot's origins are unknown, but records suggest they have been used
+          as an oracle for over 500 years. Tarot is an illustrated desk of 78
+          cards, comprising the Major and Minor Arcana. Each card has its own
+          beautiful imagery and symbolism. The 22 Major Arcana cards represent
+          life's spiritual journey and the 56 Minor Aracana cards represent
+          current and temporary events.
         </p>
         <h3 className='mt-5 text-gray-900 text-lg font-medium'>
           How can our Tarot readings help you find direction in your life?
         </h3>
         <p className='mt-3 max-w-4xl text-gray-600'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          reprehenderit quod, aspernatur, veniam beatae quia veritatis autem
-          minus illo officia aut magni, ipsa blanditiis atque quibusdam sequi
-          saepe magnam recusandae quaerat perspiciatis cupiditate consectetur
-          explicabo. Quos ex vero nihil beatae?
+          Tarot readers use specific layouts (or spreads) which are picked by,
+          or on behalf of the Truth Seeker (Querent). The Reader will then use
+          their skills and intuition to interpret the cards and provide the
+          Querent with wisdom and guidance. The significance of each card is
+          determined by the question, the reader, the Querent and the position
+          and orientation of the other cards in the spread.
         </p>
         {!readersExist && (
           <p className='mt-5 max-w-4xl text-red-600 italic'>
