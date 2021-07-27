@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { GetStaticProps } from 'next';
+import { gql } from '@apollo/client';
+import client from '../apollo-client';
 
 import Layout from '../components/Layout';
 import ReaderCard from '../components/ReaderCard';
-import { readers } from '../data/readers';
 
-const AboutPage = () => {
+const AboutPage = ({ readers }) => {
   return (
     <Layout title='About Us'>
       <section className='relative xl:px-56 md:px-28 px-10 py-32 z-10 min-h-screen w-full'>
@@ -50,6 +52,30 @@ const AboutPage = () => {
       </section>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const READERS = {
+    query: gql`
+      query GetReaders {
+        readers {
+          name
+          shortDetails
+          longDetails
+          imagePath
+          reiki
+          tarot
+          crystalHealing
+        }
+      }
+    `,
+  };
+
+  const { data } = await client.query(READERS);
+
+  return {
+    props: { readers: data.readers },
+  };
 };
 
 export default AboutPage;

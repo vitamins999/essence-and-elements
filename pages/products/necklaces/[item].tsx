@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import { gql } from '@apollo/client';
+import client from '../../../apollo-client';
 
 import Layout from '../../../components/Layout';
-import { necklaces } from '../../../data/products';
 import { formatter } from '../../../utils/format';
 
 import { Item } from '../../../interfaces/index';
@@ -119,12 +120,29 @@ const BraceletProductPage = ({ itemData }: Props) => {
 };
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const itemData = necklaces.find((necklace) => {
-    return necklace.itemLinkPath === context.params.item;
-  });
+  const NECKLACE = {
+    query: gql`
+      query GetNecklaces($itemLinkPath: String!) {
+        necklaces(where: { itemLinkPath: $itemLinkPath }) {
+          itemName
+          itemDescription
+          itemBullets
+          itemPrice
+          itemImagePath
+          itemLinkPath
+          category
+        }
+      }
+    `,
+    variables: {
+      itemLinkPath: context.params.item,
+    },
+  };
+
+  const { data } = await client.query(NECKLACE);
 
   return {
-    props: { itemData },
+    props: { itemData: data.necklaces[0] },
   };
 };
 
