@@ -1,15 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { GetStaticProps } from 'next';
+import { gql } from '@apollo/client';
+import client from '../../apollo-client';
 
 import Layout from '../../components/Layout';
 import ReaderCard from '../../components/ReaderCard';
-import { readers } from '../../data/readers';
 
-const CrystalHealingPage = () => {
-  const readersExist = readers.find((reader) => {
-    return reader.crystalHealing;
-  });
-
+const CrystalHealingPage = ({ readers }) => {
   return (
     <Layout title='Crystal Healing Services'>
       <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'>
@@ -69,12 +67,11 @@ const CrystalHealingPage = () => {
           saepe magnam recusandae quaerat perspiciatis cupiditate consectetur
           explicabo. Quos ex vero nihil beatae?
         </p>
-        {!readersExist && (
+        {readers.length === 0 ? (
           <p className='mt-5 max-w-4xl text-red-600 italic'>
             Sorry! We currently have no practitioners offering this service!
           </p>
-        )}
-        {readersExist && (
+        ) : (
           <>
             <h3 className='mt-10 text-gray-700 text-xl font-medium'>
               Our Crystal Healing Practitioners
@@ -184,6 +181,30 @@ const CrystalHealingPage = () => {
       </section>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const READER = {
+    query: gql`
+      query GetReaders {
+        readers(where: { crystalHealing: true }) {
+          name
+          shortDetails
+          longDetails
+          imagePath
+          reiki
+          tarot
+          crystalHealing
+        }
+      }
+    `,
+  };
+
+  const { data } = await client.query(READER);
+
+  return {
+    props: { readers: data.readers },
+  };
 };
 
 export default CrystalHealingPage;

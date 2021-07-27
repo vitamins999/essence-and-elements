@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
+import { gql } from '@apollo/client';
+import client from '../apollo-client';
 
 import Layout from '../components/Layout';
 import Card from '../components/Card';
-import { services } from '../data/services';
 
-const ServicesPage = () => {
+const ServicesPage = ({ services }) => {
   return (
     <Layout title='Services'>
       <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-10 z-10 min-h-screen w-full'>
@@ -37,6 +39,28 @@ const ServicesPage = () => {
       </section>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const SERVICES = {
+    query: gql`
+      query GetServices {
+        services {
+          name
+          text
+          imagePath
+          category
+          subcategory
+        }
+      }
+    `,
+  };
+
+  const { data } = await client.query(SERVICES);
+
+  return {
+    props: { services: data.services },
+  };
 };
 
 export default ServicesPage;

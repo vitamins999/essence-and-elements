@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
+import { gql } from '@apollo/client';
+import client from '../../apollo-client';
 
 import Layout from '../../components/Layout';
 import ItemCard from '../../components/ItemCard';
-import { bracelets } from '../../data/products';
 
-const BraceletsPage = () => {
+const BraceletsPage = ({ bracelets }) => {
   return (
     <Layout title='Bracelets'>
       <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'>
@@ -43,6 +45,28 @@ const BraceletsPage = () => {
       </section>
     </Layout>
   );
+};
+
+export const getStaticProps: GetStaticProps = async () => {
+  const BRACELETS = {
+    query: gql`
+      query GetBracelets {
+        bracelets {
+          itemName
+          itemPrice
+          itemImagePath
+          itemLinkPath
+          category
+        }
+      }
+    `,
+  };
+
+  const { data } = await client.query(BRACELETS);
+
+  return {
+    props: { bracelets: data.bracelets },
+  };
 };
 
 export default BraceletsPage;
