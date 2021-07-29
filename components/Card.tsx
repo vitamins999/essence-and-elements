@@ -11,7 +11,7 @@ type Props = {
 const Card = ({ data, index }: Props) => {
   return (
     <Link href={`/${data.category}/${data.subcategory}`}>
-      <a className='cursor-pointer'>
+      <a data-testid='card' className='cursor-pointer'>
         <div
           className={`w-full bg-gray-200 my-10 flex lg:flex-row flex-col rounded-md shadow-md ${
             index % 2 !== 1 ? 'justify-start' : 'justify-between'
@@ -20,9 +20,10 @@ const Card = ({ data, index }: Props) => {
           {index % 2 !== 1 && (
             <Image
               src={`${data.imagePath}`}
-              alt=''
+              alt={data.name}
               height={345}
               width={520}
+              data-testid='image-left'
               className='h-72 lg:rounded-l-md lg:rounded-t-none rounded-t-md object-cover'
             />
           )}
@@ -40,7 +41,8 @@ const Card = ({ data, index }: Props) => {
               src={`${data.imagePath}`}
               height={345}
               width={520}
-              alt=''
+              alt={data.name}
+              data-testid='image-right'
               className='h-72 lg:rounded-r-md lg:rounded-b-none rounded-b-md object-cover'
             />
           )}

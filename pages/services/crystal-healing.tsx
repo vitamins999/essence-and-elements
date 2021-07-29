@@ -10,7 +10,10 @@ import ReaderCard from '../../components/ReaderCard';
 const CrystalHealingPage = ({ readers }) => {
   return (
     <Layout title='Crystal Healing Services'>
-      <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'>
+      <section
+        data-testid='section-crystal-healing'
+        className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'
+      >
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>

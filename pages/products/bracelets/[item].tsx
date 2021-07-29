@@ -19,7 +19,10 @@ const BraceletProductPage = ({ itemData }: Props) => {
 
   return (
     <Layout title={`${itemData.itemName} ${productType}`}>
-      <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-48 iPadProWidescreen:pt-56'>
+      <section
+        data-testid='section-item'
+        className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-48 iPadProWidescreen:pt-56'
+      >
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>
@@ -57,6 +60,7 @@ const BraceletProductPage = ({ itemData }: Props) => {
                   className='lg:h-96 sm:h-72 h-52 w-full object-cover rounded-lg'
                   src={`${itemData.itemImagePath}`}
                   layout='fill'
+                  data-testid='image-item'
                 />
               </div>
               <div className='w-full flex flex-col justify-between sm:mt-0 -mt-10'>
@@ -64,7 +68,10 @@ const BraceletProductPage = ({ itemData }: Props) => {
                   <h2 className='lg:text-sm text-xs font-heading text-purple-500 tracking-tight uppercase'>
                     {productTypeFull}
                   </h2>
-                  <h1 className='text-gray-900 lg:text-5xl text-4xl font-heading font-medium tracking-tight mt-3 mb-2'>
+                  <h1
+                    data-testid='heading-item-name'
+                    className='text-gray-900 lg:text-5xl text-4xl font-heading font-medium tracking-tight mt-3 mb-2'
+                  >
                     {itemData.itemName}
                   </h1>
 
@@ -72,18 +79,28 @@ const BraceletProductPage = ({ itemData }: Props) => {
                     <span className='lg:text-md text-sm font-bold mr-1 align-top text-gray-500'>
                       £
                     </span>
-                    <span className='font-medium lg:text-2xl text-xl text-gray-900'>
+                    <span
+                      data-testid='span-item-price'
+                      className='font-medium lg:text-2xl text-xl text-gray-900'
+                    >
                       {itemData.itemPrice / 100}
                     </span>
                   </div>
                 </div>
                 <div className='font-medium mt-2'>
-                  <p className='leading-relaxed lg:text-sm text-xs max-w-sm pb-2 text-gray-600'>
+                  <p
+                    data-testid='paragraph-item-description'
+                    className='leading-relaxed lg:text-sm text-xs max-w-sm pb-2 text-gray-600'
+                  >
                     {itemData.itemDescription}
                   </p>
                   {itemData.itemBullets.map((bullet, index) => {
                     return (
-                      <div className='flex py-1' key={index}>
+                      <div
+                        data-testid='div-item-bullet'
+                        className='flex py-1'
+                        key={index}
+                      >
                         <svg
                           className='lg:w-6 lg:h-6 w-4 h-4 mr-2'
                           fill='none'
