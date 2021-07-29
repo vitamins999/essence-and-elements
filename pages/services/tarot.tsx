@@ -10,7 +10,10 @@ import ReaderCard from '../../components/ReaderCard';
 const TarotPage = ({ readers }) => {
   return (
     <Layout title='Tarot Services'>
-      <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'>
+      <section
+        data-testid='section-tarot'
+        className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'
+      >
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>
@@ -162,6 +165,7 @@ const TarotPage = ({ readers }) => {
                           id='message'
                           name='message'
                           required
+                          placeholder='My question is...'
                           className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-inner'
                         ></textarea>
                       </div>

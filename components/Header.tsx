@@ -28,15 +28,16 @@ const Header = ({ menuOpen, setMenuOpen }: Props) => {
           viewBox='0 0 24 24'
           xmlns='http://www.w3.org/2000/svg'
         >
-          <motion.path
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
+          {
+            //  TODO: Change this to ordinary tag instead of motion. Check it looks
+            // fine.
+          }
+          <path
             strokeLinecap='round'
             strokeLinejoin='round'
             strokeWidth='2'
             d={menuOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
-          ></motion.path>
+          ></path>
         </motion.svg>
       </button>
     </header>

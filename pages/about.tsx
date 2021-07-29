@@ -10,7 +10,10 @@ import ReaderCard from '../components/ReaderCard';
 const AboutPage = ({ readers }) => {
   return (
     <Layout title='About Us'>
-      <section className='relative xl:px-56 md:px-28 px-10 py-32 z-10 min-h-screen w-full'>
+      <section
+        data-testid='section-about'
+        className='relative xl:px-56 md:px-28 px-10 py-32 z-10 min-h-screen w-full'
+      >
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>
             <Link href='/'>

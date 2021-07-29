@@ -13,7 +13,7 @@ type Props = {
 const ItemCard = ({ data }: Props) => {
   return (
     <Link href={`/products/${data.category}/${data.itemLinkPath}`}>
-      <a className='cursor-pointer'>
+      <a data-testid='card-item' className='cursor-pointer'>
         <div className='lg:w-84 lg:h-96 w-64 h-72'>
           <motion.div
             whileHover={{ scale: 1.03 }}
@@ -25,10 +25,16 @@ const ItemCard = ({ data }: Props) => {
               alt={`${data.itemName}`}
               layout='fill'
               className='object-cover rounded-md'
+              data-testid='image'
             />
           </motion.div>
-          <p className='pt-3 text-gray-500'>{data.itemName}</p>
-          <p className='pt-2 tracking-wide text-gray-900'>
+          <p data-testid='paragraph-item-name' className='pt-3 text-gray-500'>
+            {data.itemName}
+          </p>
+          <p
+            data-testid='paragraph-item-price'
+            className='pt-2 tracking-wide text-gray-900'
+          >
             {formatter.format(data.itemPrice / 100)}
           </p>
         </div>
