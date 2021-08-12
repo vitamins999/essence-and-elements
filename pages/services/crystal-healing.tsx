@@ -54,21 +54,19 @@ const CrystalHealingPage = ({ readers }) => {
           What is Crystal Healing?
         </h3>
         <p className='mt-3 max-w-4xl text-gray-600'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis
-          deleniti aspernatur eius nostrum enim magnam obcaecati voluptatem
-          velit. Alias perspiciatis iure saepe, mollitia odit delectus libero
-          officia ipsum sed! Eaque quis praesentium nulla officiis aut
-          perferendis facilis dolorum. Placeat, voluptate?
+          Crystal Healing is a natural and holistic therapy. It taps into an
+          energy based system, using various types of crystals, which in turn
+          helps to unblock and balance the chakras. The practitioner places the
+          crystals around the client, usually whilst the client is laying down.
         </p>
         <h3 className='mt-5 text-gray-900 text-lg font-medium'>
           How can Crystal Healing benefit your body and mind?
         </h3>
         <p className='mt-3 max-w-4xl text-gray-600'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-          reprehenderit quod, aspernatur, veniam beatae quia veritatis autem
-          minus illo officia aut magni, ipsa blanditiis atque quibusdam sequi
-          saepe magnam recusandae quaerat perspiciatis cupiditate consectetur
-          explicabo. Quos ex vero nihil beatae?
+          Crystals can help to ground, balance, restore and cleanse both your
+          body and mind. Crystal Healing is a practice that is intended for
+          relaxing, renewing and restoring yourself. Sessions are aimed at
+          calming and refreshing your physical and mental self.
         </p>
         {readers.length === 0 ? (
           <p className='mt-5 max-w-4xl text-red-600 italic'>

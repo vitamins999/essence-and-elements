@@ -31,11 +31,13 @@ const AboutPage = ({ readers }) => {
               Who we are and our mission to help people
             </h2>
             <p className='mt-5 max-w-4xl text-gray-600 text-sm'>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Accusamus, incidunt ipsam corporis fugiat adipisci molestias
-              nostrum. Laboriosam in odio distinctio nemo ipsa laudantium illo?
-              Aliquam ab nulla praesentium culpa neque fuga excepturi nobis
-              ipsum, delectus odit mollitia dignissimos cupiditate ut!
+              Our names are Clara and Cleo. We are spiritual soul sisters, and
+              share mystical Russian and Romanian heritage. Truly understanding
+              and empathetic, we are passionate in helping others to find their
+              true path. Many years ago, we were drawn to Tarot, initially
+              reading for our own knowledge and enlightenment, and then to help
+              others. Additionally, we use Crystals and Pendulum to enrich and
+              clarify our readings.
             </p>
           </div>
           <div className='w-full h-full flex justify-center items-center'>
