@@ -31,11 +31,12 @@ const ProductsPage = ({ products }) => {
           Our wide range of spiritual and healing merchandise.
         </h3>
         <p className='mb-10 mt-3 max-w-4xl text-gray-600 md:text-base text-sm'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora sit
-          accusantium eveniet, distinctio debitis, adipisci accusamus nihil amet
-          temporibus nisi minus sequi praesentium quaerat magni, maiores earum
-          facere animi! Ullam iusto molestiae provident inventore magni quis
-          voluptatem harum voluptate libero!
+          Choose from our beautiful colour changing Vitamin D bracelets. Or take
+          a look at our polished healing tumblestone necklace selection. Each
+          tumblestone has a different meaning, so you will have no problem
+          finding one that is perfect for you. Furthermore, each tumblestone
+          necklace has been cleansed using a Tibetan Singing Bowl, to promote
+          the necklace's Aura and Chakra balancing properties.
         </p>
         {products.map((product, index) => {
           return <Card data={product} index={index} key={product.name} />;
