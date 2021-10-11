@@ -42,7 +42,7 @@ const ReikiPage = ({ readers }) => {
           <div className='w-full h-full flex justify-center'>
             <div className=' relative rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'>
               <Image
-                src='/reiki-1.jpeg'
+                src='/img/reiki-1.webp'
                 layout='fill'
                 alt='logo'
                 className='rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'
