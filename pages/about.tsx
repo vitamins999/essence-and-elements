@@ -43,7 +43,7 @@ const AboutPage = ({ readers }) => {
           <div className='w-full h-full flex justify-center items-center'>
             <div className='relative rounded-full object-cover lg:w-80 lg:h-80 lg-mt-0 mt-5 w-40 h-40'>
               <Image
-                src='/hand-holding.jpeg'
+                src='/img/hand-holding.webp'
                 layout='fill'
                 alt='logo'
                 className='rounded-full object-cover lg:w-80 lg:h-80 lg-mt-0 mt-5 w-40 h-40'

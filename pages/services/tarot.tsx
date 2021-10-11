@@ -42,7 +42,7 @@ const TarotPage = ({ readers }) => {
           <div className='w-full h-full flex justify-center'>
             <div className=' relative rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'>
               <Image
-                src='/tarot-1.jpeg'
+                src='/img/tarot-1.webp'
                 layout='fill'
                 alt='logo'
                 className='rounded-full object-cover lg:w-80 lg:h-80 sm:w-40 sm:h-40 w-20 h-20'
