@@ -149,18 +149,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [
-      { params: { item: 'amythyst' } },
+      { params: { item: 'amethyst' } },
       { params: { item: 'jade' } },
       { params: { item: 'black-onyx' } },
       { params: { item: 'opal' } },
       { params: { item: 'snowflake-obsidian' } },
       { params: { item: 'blue-sodalite' } },
       { params: { item: 'tigers-eye' } },
-      { params: { item: 'brown-jasper' } },
+      { params: { item: 'brown-agate' } },
       { params: { item: 'white-howlite' } },
       { params: { item: 'turquoise-tumblestone' } },
       { params: { item: 'feldspar' } },
-      { params: { item: 'petrified-wood' } },
+      { params: { item: 'dalmation-jasper' } },
     ],
     fallback: false,
   };
