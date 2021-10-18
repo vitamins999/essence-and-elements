@@ -73,7 +73,7 @@ const BraceletProductPage = ({ itemData }: Props) => {
                       £
                     </span>
                     <span className='font-medium lg:text-2xl text-xl text-gray-900'>
-                      {itemData.itemPrice / 100}
+                      {Number(itemData.itemPrice / 100).toFixed(2)}
                     </span>
                   </div>
                 </div>
@@ -103,12 +103,17 @@ const BraceletProductPage = ({ itemData }: Props) => {
                     );
                   })}
                 </div>
-                <div>
+                <div className='flex flex-col'>
                   <div className='flex items-center pb-5 border-b-2 border-gray-200 mb-5'></div>
 
-                  <button className='w-full text-gray-50 bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 transition duration-200 ease-in-out rounded-md'>
+                  <a
+                    href={itemData.externalURL}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='w-full text-center text-gray-50 bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-800 transition duration-200 ease-in-out rounded-md'
+                  >
                     Buy Now - {formatter.format(itemData.itemPrice / 100)}
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -131,6 +136,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
           itemImagePath
           itemLinkPath
           category
+          externalURL
         }
       }
     `,
