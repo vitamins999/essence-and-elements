@@ -32,4 +32,5 @@ export interface Item {
   itemImagePath: string;
   itemLinkPath: string;
   category: string;
+  externalURL: string;
 }
