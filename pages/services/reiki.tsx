@@ -98,7 +98,12 @@ const ReikiPage = ({ readers }) => {
               </p>
               <div className=''>
                 <div className='lg:w-1/2 md:w-2/3'>
-                  <form className='flex flex-wrap -m-2'>
+                  <form
+                    name='reiki'
+                    method='POST'
+                    data-netlify='true'
+                    className='flex flex-wrap -m-2'
+                  >
                     <div className='p-2 w-1/2'>
                       <div className='relative'>
                         <label className='leading-7 text-sm text-gray-900 font-medium'>

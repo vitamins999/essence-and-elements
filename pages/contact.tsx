@@ -34,7 +34,12 @@ const ContactPage = () => {
         <section className='text-gray-600 relative'>
           <div className='container px-5 pt-12 mx-auto'>
             <div className='lg:w-1/2 md:w-2/3 mx-auto'>
-              <form className='flex flex-wrap -m-2'>
+              <form
+                name='contact'
+                method='POST'
+                data-netlify='true'
+                className='flex flex-wrap -m-2'
+              >
                 <div className='p-2 w-full mt-8 border-t border-gray-300 text-center'></div>
                 <div className='p-2 w-1/2'>
                   <div className='relative'>
