@@ -101,9 +101,11 @@ const ReikiPage = ({ readers }) => {
                   <form
                     name='reiki'
                     method='POST'
+                    action='/success'
                     data-netlify='true'
                     className='flex flex-wrap -m-2'
                   >
+                    <input type='hidden' name='form-name' value='reiki' />
                     <div className='p-2 w-1/2'>
                       <div className='relative'>
                         <label className='leading-7 text-sm text-gray-900 font-medium'>
@@ -115,7 +117,7 @@ const ReikiPage = ({ readers }) => {
                           name='name'
                           placeholder='eg. Jim Morrison'
                           required
-                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
+                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-xs md:text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
                         />
                       </div>
                     </div>
@@ -130,7 +132,7 @@ const ReikiPage = ({ readers }) => {
                           name='email'
                           placeholder='eg. jim.morrison@company.com'
                           required
-                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
+                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-xs md:text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
                         />
                       </div>
                     </div>
@@ -143,7 +145,7 @@ const ReikiPage = ({ readers }) => {
                           id='practitioner'
                           name='practioner'
                           required
-                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
+                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-xs md:text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
                         >
                           {readers.map((reader) => {
                             return (
@@ -167,7 +169,7 @@ const ReikiPage = ({ readers }) => {
                           name='message'
                           placeholder='My question is...'
                           required
-                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-inner'
+                          className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-xs md:text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-inner'
                         ></textarea>
                       </div>
                     </div>

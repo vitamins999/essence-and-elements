@@ -37,9 +37,11 @@ const ContactPage = () => {
               <form
                 name='contact'
                 method='POST'
+                action='/success'
                 data-netlify='true'
                 className='flex flex-wrap -m-2'
               >
+                <input type='hidden' name='form-name' value='contact' />
                 <div className='p-2 w-full mt-8 border-t border-gray-300 text-center'></div>
                 <div className='p-2 w-1/2'>
                   <div className='relative'>
@@ -55,7 +57,7 @@ const ContactPage = () => {
                       name='name'
                       placeholder='eg. Jim Morrison'
                       required
-                      className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
+                      className='w-full text-xs bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 md:text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
                     />
                   </div>
                 </div>
@@ -73,7 +75,7 @@ const ContactPage = () => {
                       name='email'
                       placeholder='eg. jim.morrison@company.com'
                       required
-                      className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
+                      className='w-full text-xs bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 md:text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-inner'
                     />
                   </div>
                 </div>
@@ -90,7 +92,7 @@ const ContactPage = () => {
                       name='message'
                       placeholder='Message'
                       required
-                      className='w-full bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-inner'
+                      className='w-full text-xs bg-gray-100 bg-opacity-50 rounded-lg border border-gray-300 focus:border-purple-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 md:text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-inner'
                     ></textarea>
                   </div>
                 </div>
@@ -106,6 +108,17 @@ const ContactPage = () => {
               </form>
             </div>
           </div>
+          <p className='-mb-8 mt-5 text-xs lg:text-base'>
+            Alternatively, please feel free to email us at:{' '}
+            <a
+              className='text-purple-700 underline'
+              href='mailto:essence.elements1@gmail.com'
+              rel='noreferrer noopener'
+              target='_blank'
+            >
+              essence.elements1@gmail.com
+            </a>
+          </p>
         </section>
       </section>
     </Layout>
