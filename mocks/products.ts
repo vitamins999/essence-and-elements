@@ -31,6 +31,7 @@ export const bracelets: Item[] = [
     itemImagePath: '/vitamin-d.jpeg',
     itemLinkPath: 'green-white',
     category: 'bracelets',
+    externalURL: 'https://www.example.com',
   },
   {
     itemName: 'Blue & Pink',
@@ -45,6 +46,7 @@ export const bracelets: Item[] = [
     itemImagePath: '/black.jpeg',
     itemLinkPath: 'blue-pink',
     category: 'bracelets',
+    externalURL: 'https://www.example.com',
   },
 ];
 
@@ -62,6 +64,7 @@ export const necklaces: Item[] = [
     itemImagePath: '/necklace-healing.jpeg',
     itemLinkPath: 'amythyst',
     category: 'necklaces',
+    externalURL: 'https://www.example.com',
   },
   {
     itemName: 'Jade',
@@ -72,5 +75,6 @@ export const necklaces: Item[] = [
     itemImagePath: '/necklace-green.jpeg',
     itemLinkPath: 'jade',
     category: 'necklaces',
+    externalURL: 'https://www.example.com',
   },
 ];
