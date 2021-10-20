@@ -21,7 +21,11 @@ const Footer = ({ footerFixed }: Props) => {
           whileHover={{ translateY: -7 }}
           className='cursor-pointer mr-5'
         >
-          <a>
+          <a
+            href='https://www.facebook.com/Essence.Elements'
+            target='_blank'
+            rel='noreferrer'
+          >
             <Image src='/facebook.svg' alt='Facebook' width={20} height={20} />
           </a>
         </motion.li>
@@ -29,12 +33,20 @@ const Footer = ({ footerFixed }: Props) => {
           whileHover={{ translateY: -7 }}
           className='cursor-pointer mr-5'
         >
-          <a>
+          <a
+            href='https://twitter.com/EssenceElement2'
+            target='_blank'
+            rel='noreferrer'
+          >
             <Image src='/twitter.svg' alt='Twitter' width={20} height={20} />
           </a>
         </motion.li>
         <motion.li whileHover={{ translateY: -7 }} className='cursor-pointer'>
-          <a>
+          <a
+            href='https://www.instagram.com/essence.elements/'
+            target='_blank'
+            rel='noreferrer'
+          >
             <Image
               src='/instagram.svg'
               alt='Instagram'
