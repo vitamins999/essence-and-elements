@@ -6,7 +6,7 @@ Developed primarily with Next.js and Tailwind CSS on the frontend (this current 
 
 ## Website
 
-[Live Website](https://essenceandelements.netlify.app/)
+[Live Website](https://www.essenceandelements.org/)
 
 ## Customer Specification
 

@@ -93,9 +93,7 @@ const TarotPage = ({ readers }) => {
                 Request a Reading
               </h3>
               <p className='font-semibold'>£2.99 - One Card Reading</p>
-              <p className='font-semibold'>
-                (For a three card reading, please enquire)
-              </p>
+              <p className='font-semibold'>£9.99 - Three Card Reading</p>
               <p className='mt-3 mb-5 max-w-4xl text-gray-600'>
                 Getting a reading couldn't be simpler. Just fill in the form
                 below with your name and email, the question you want answered,
