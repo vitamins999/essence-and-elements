@@ -4,10 +4,9 @@ import Layout from '../components/Layout';
 const SuccessPage = () => {
   const title = 'Form Submitted';
   const description = 'Essence & Elements Form Submission Success';
-  const ogImage = '/img/tarot.webp';
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section
         data-testid='section-contact'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-80'

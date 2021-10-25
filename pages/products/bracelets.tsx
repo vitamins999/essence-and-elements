@@ -10,10 +10,9 @@ const BraceletsPage = ({ bracelets }) => {
   const title = 'Vitamin D Bracelets';
   const description =
     'Browse our selection of U.V wristbands that help you get the Vitamin D you need, without the risk of sunburn.';
-  const ogImage = '/img/bracelet.webp';
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section
         data-testid='section-bracelets'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'

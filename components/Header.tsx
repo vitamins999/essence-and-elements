@@ -18,6 +18,7 @@ const Header = ({ menuOpen, setMenuOpen }: Props) => {
         </a>
       </Link>
       <button
+        aria-label='Open Menu'
         className='focus:outline-none'
         onClick={() => setMenuOpen(!menuOpen)}
       >
@@ -28,10 +29,6 @@ const Header = ({ menuOpen, setMenuOpen }: Props) => {
           viewBox='0 0 24 24'
           xmlns='http://www.w3.org/2000/svg'
         >
-          {
-            //  TODO: Change this to ordinary tag instead of motion. Check it looks
-            // fine.
-          }
           <path
             strokeLinecap='round'
             strokeLinejoin='round'
