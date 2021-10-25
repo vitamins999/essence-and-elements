@@ -3,8 +3,13 @@ import Link from 'next/link';
 import Layout from '../components/Layout';
 
 const ContactPage = () => {
+  const title = 'Contact Us';
+  const description =
+    'Contact us now using our easy online form, or alternatively email us at: essence.elements1@gmail.com';
+  const ogImage = '/img/tarot.webp';
+
   return (
-    <Layout title='Contact Us'>
+    <Layout title={title} description={description} ogImage={ogImage}>
       <section
         data-testid='section-contact'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-80'

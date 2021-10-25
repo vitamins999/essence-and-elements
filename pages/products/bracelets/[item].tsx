@@ -17,8 +17,12 @@ const BraceletProductPage = ({ itemData }: Props) => {
   const productType = 'Bracelet';
   const productTypeFull = 'Vitamin D Bracelet';
 
+  const title = `${itemData.itemName} ${productType}`;
+  const description = itemData.itemDescription;
+  const ogImage = itemData.itemImagePath;
+
   return (
-    <Layout title={`${itemData.itemName} ${productType}`}>
+    <Layout title={title} description={description} ogImage={ogImage}>
       <section
         data-testid='section-item'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-48 iPadProWidescreen:pt-56'

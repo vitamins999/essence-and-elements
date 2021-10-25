@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.essenceandelements.org
+
+# Sitemaps
+Sitemap: https://www.essenceandelements.org/sitemap.xml

@@ -7,8 +7,13 @@ import Layout from '../components/Layout';
 import Card from '../components/Card';
 
 const ProductsPage = ({ products }) => {
+  const title = 'Spiritual and Healing Merchandise';
+  const description =
+    'Browse our beautiful colour changing Vitamin D bracelets and our polished healing tumblestone necklace selection.';
+  const ogImage = '/img/necklace-tree.webp';
+
   return (
-    <Layout title='Products'>
+    <Layout title={title} description={description} ogImage={ogImage}>
       <section
         data-testid='section-products'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-10 z-10 min-h-screen w-full'

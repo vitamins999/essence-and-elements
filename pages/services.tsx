@@ -7,8 +7,13 @@ import Layout from '../components/Layout';
 import Card from '../components/Card';
 
 const ServicesPage = ({ services }) => {
+  const title = 'Spiritual and Healing Merchandise';
+  const description =
+    'Browse our range of services, from personalised Tarot reading, to Crystal Healing or the power of Reiki.';
+  const ogImage = '/img/tarot.webp';
+
   return (
-    <Layout title='Services'>
+    <Layout title={title} description={description} ogImage={ogImage}>
       <section
         data-testid='section-services'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-10 z-10 min-h-screen w-full'

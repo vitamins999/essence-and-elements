@@ -4,8 +4,18 @@ import { motion } from 'framer-motion';
 import Layout from '../components/Layout';
 
 const HomePage = () => {
+  const title = 'Home';
+  const description =
+    'We are a UK spiritual healing business, offering intuitive Tarot readings, Reiki and Crystal Healing services.';
+  const ogImage = '/img/tarot.webp';
+
   return (
-    <Layout title='Home' footerFixed={true}>
+    <Layout
+      title={title}
+      description={description}
+      ogImage={ogImage}
+      footerFixed={true}
+    >
       <div className='relative h-screen w-screen overflow-hidden'>
         <video
           className='z-0 opacity-40 object-cover absolute top-0 left-0 w-screen h-screen'

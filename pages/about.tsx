@@ -8,8 +8,12 @@ import Layout from '../components/Layout';
 import ReaderCard from '../components/ReaderCard';
 
 const AboutPage = ({ readers }) => {
+  const title = 'About Essence & Elements';
+  const description = 'Who we are and our mission to help people.';
+  const ogImage = '/img/hand-holding.webp';
+
   return (
-    <Layout title='About Us'>
+    <Layout title={title} description={description} ogImage={ogImage}>
       <section
         data-testid='section-about'
         className='relative xl:px-56 md:px-28 px-10 py-32 z-10 min-h-screen w-full'
