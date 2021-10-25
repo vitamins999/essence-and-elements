@@ -8,8 +8,13 @@ import Layout from '../../components/Layout';
 import ReaderCard from '../../components/ReaderCard';
 
 const TarotPage = ({ readers }) => {
+  const title = 'Tarot Services - Book a Tarot Reading Now';
+  const description =
+    'Book a one card or three card Tarot reading and let our Tarot readings help you find direction in your life.';
+  const ogImage = '/img/tarot-1.webp';
+
   return (
-    <Layout title='Tarot Services'>
+    <Layout title={title} description={description} ogImage={ogImage}>
       <section
         data-testid='section-tarot'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'
@@ -94,12 +99,15 @@ const TarotPage = ({ readers }) => {
               </h3>
               <p className='font-semibold'>£2.99 - One Card Reading</p>
               <p className='font-semibold'>£9.99 - Three Card Reading</p>
-              <p className='mt-3 mb-5 max-w-4xl text-gray-600'>
+              <p className='mt-3 mb-3 max-w-4xl text-gray-600'>
                 Getting a reading couldn't be simpler. Just fill in the form
                 below with your name and email, the question you want answered,
                 and select the name of the practitioner you want to give your
                 reading. The practitioner will get back to you right away to
                 arrange payment.
+              </p>
+              <p className='mb-5 max-w-4xl text-gray-600'>
+                Please note: these services are for entertainment purposes only.
               </p>
               <div className=''>
                 <div className='lg:w-1/2 md:w-2/3'>
