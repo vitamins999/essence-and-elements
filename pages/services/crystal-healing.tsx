@@ -11,10 +11,9 @@ const CrystalHealingPage = ({ readers }) => {
   const title = 'Crystal Healing Services - Book a Healing now';
   const description =
     'Book a Crystal Healing now and discover how our Crystal Healing services can benefit your body and mind.';
-  const ogImage = '/img/crystal-healing-1.webp';
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section
         data-testid='section-crystal-healing'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'

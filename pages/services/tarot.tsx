@@ -11,10 +11,9 @@ const TarotPage = ({ readers }) => {
   const title = 'Tarot Services - Book a Tarot Reading Now';
   const description =
     'Book a one card or three card Tarot reading and let our Tarot readings help you find direction in your life.';
-  const ogImage = '/img/tarot-1.webp';
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section
         data-testid='section-tarot'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'

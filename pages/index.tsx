@@ -7,15 +7,9 @@ const HomePage = () => {
   const title = 'Home';
   const description =
     'We are a UK spiritual healing business, offering intuitive Tarot readings, Reiki and Crystal Healing services.';
-  const ogImage = '/img/tarot.webp';
 
   return (
-    <Layout
-      title={title}
-      description={description}
-      ogImage={ogImage}
-      footerFixed={true}
-    >
+    <Layout title={title} description={description} footerFixed={true}>
       <div className='relative h-screen w-screen overflow-hidden'>
         <video
           className='z-0 opacity-40 object-cover absolute top-0 left-0 w-screen h-screen'
@@ -39,6 +33,7 @@ const HomePage = () => {
             </p>
             <Link href='/services'>
               <motion.button
+                aria-label='Explore'
                 whileHover={{ scale: 1.1 }}
                 className='bg-white text-purple-700 text-sm md:text-base mt-5 py-3 px-8 rounded-lg uppercase tracking-wider hover:text-purple-900 focus:outline-none'
               >

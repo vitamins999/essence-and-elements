@@ -10,10 +10,9 @@ const NecklacesPage = ({ necklaces }) => {
   const title = 'Crystal Necklaces';
   const description =
     'Browse our selection of polished tumblestone crystal necklaces, enhanced with spiritual and healing properties.';
-  const ogImage = '/img/necklace-tree.webp';
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section
         data-testid='section-necklaces'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'

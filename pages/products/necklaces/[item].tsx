@@ -19,10 +19,9 @@ const BraceletProductPage = ({ itemData }: Props) => {
 
   const title = `${itemData.itemName} ${productType}`;
   const description = itemData.itemDescription;
-  const ogImage = itemData.itemImagePath;
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 w-full iPadPro:pt-48 iPadProWidescreen:pt-56'>
         <div className='mx-auto pt-6 pb-4 font-heading'>
           <h2 className='inline-block text-gray-500'>

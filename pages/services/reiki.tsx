@@ -11,10 +11,9 @@ const ReikiPage = ({ readers }) => {
   const title = 'Reiki Services - Book a Reiki Healing Now';
   const description =
     'Book a Reiki Healing now and discover how our Reiki Healing services can benefit your body and mind.';
-  const ogImage = '/img/reiki-1.webp';
 
   return (
-    <Layout title={title} description={description} ogImage={ogImage}>
+    <Layout title={title} description={description}>
       <section
         data-testid='section-reiki'
         className='relative xl:px-56 md:px-28 px-10 pt-32 pb-20 z-10 min-h-screen w-full'

@@ -9,17 +9,10 @@ type Props = {
   children: ReactNode;
   title: string;
   description: string;
-  ogImage: string;
   footerFixed?: boolean;
 };
 
-const Layout = ({
-  children,
-  title,
-  description,
-  ogImage,
-  footerFixed,
-}: Props) => {
+const Layout = ({ children, title, description, footerFixed }: Props) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -38,7 +31,11 @@ const Layout = ({
           key='ogtitle'
         />
         <meta property='og:description' content={description} key='ogdesc' />
-        <meta property='og:image' content={ogImage} key='ogimage' />
+        <meta
+          property='og:image'
+          content='https://www.essenceandelements.org/img/logo.png'
+          key='ogimage'
+        />
         <meta
           property='og:site_name'
           content='Essence & Elements'
