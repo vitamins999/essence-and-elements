@@ -41,6 +41,10 @@ const Layout = ({ children, title, description, footerFixed }: Props) => {
           content='Essence & Elements'
           key='ogsitename'
         />
+        <meta
+          name='google-site-verification'
+          content='UWpK5m7Z-FmvzCVuSdFpfqGpFL2-GcztxrVWu4Kf15U'
+        />
       </Head>
       <div className='bg-gray-50 text-gray-900 font-body'>
         <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
