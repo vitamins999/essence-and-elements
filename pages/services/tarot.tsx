@@ -96,7 +96,7 @@ const TarotPage = ({ readers }) => {
               <h3 className='mt-10 mb-1 text-gray-700 text-xl font-medium'>
                 Request a Reading
               </h3>
-              <p className='font-semibold'>£2.99 - One Card Reading</p>
+              <p className='font-semibold'>£4.99 - One Card Reading</p>
               <p className='font-semibold'>£9.99 - Three Card Reading</p>
               <p className='mt-3 mb-3 max-w-4xl text-gray-600'>
                 Getting a reading couldn't be simpler. Just fill in the form
